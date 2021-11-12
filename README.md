@@ -1,3 +1,10 @@
+## PREREQUIS
+/!\ Important /!\ 
+Il faut installer la dernière version de node puis le déposer à la racine.
+
+Le token à placer pour accéder au git se trouve dans le fichier suivant : src\environments\environment.ts
+-> un attribut token y est dédié
+
 # Sourcerer
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
