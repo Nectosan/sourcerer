@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <app-application></app-application>
+        <app-repositories *ngFor="let item of repoAccessible"
+                          [repo]="item"
+                         
+        ></app-repositories>
+      </ul>
+    </div>
+  </div>
+</div>

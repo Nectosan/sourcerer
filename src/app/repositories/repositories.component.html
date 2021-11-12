@@ -1,0 +1,55 @@
+
+<div class="card">
+    <header class="card-header">
+
+
+      <div class="card-header-title" >
+
+
+        <div class="columns is-variable repo-column is-0 ">
+
+          <div class="column is-0" class="title-repo" >
+            <img class="git-picture" src="https://i.imgur.com/rv1NAkm.png">
+          {{ repo.name }}
+          </div>
+          
+          <div class="column is-0" class="header-commits">
+            {{ nbCommits }}
+
+          </div>
+         
+        </div>
+
+      </div>
+      <button class="card-header-icon" aria-label="more options">
+        <span class="icon">
+          <i class="fas fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+    </header>
+    <div class="card" class="card-content">
+      <div class="block-repo"> 
+        
+        <img class="git-picture"src="https://i.imgur.com/WBzMLZt.png"> {{description}}
+
+      </div>
+
+      <div class="block-repo">  
+
+        <img class="git-picture" src="https://i.imgur.com/rv1NAkm.png">{{namewithOwner}}</div>
+
+      <div class="block-repo">
+        <app-langages  class="language" *ngFor="let item of language"
+        [nomLangages]="item"
+        
+        ></app-langages>
+    
+    </div>
+
+    <div class="block-repo" >
+      Last updated : {{repo.updatedAt}}
+    </div>
+     
+    </div>
+    
+  </div>

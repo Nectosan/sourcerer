@@ -1,0 +1,77 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+
+
+.title-column {
+    background-color: #D4E2E0;
+    padding: 0.75rem ;
+    padding-left: 0.75rem;
+}
+
+.title-column-follows {
+    background-color: #B8F5DA;
+    padding: 0.75rem ;
+    padding-left: 0.75rem;
+}
+
+.repo-column{
+    background-color: #e2eae4;
+    padding: 0.25rem ;
+    font-size: 18px;
+}
+
+.repo-block{
+    padding: 0.25rem ;
+    padding-left: 0.75rem;
+    left:0;
+}
+
+.title-section{
+    margin-bottom: 3rem;
+}
+
+.title-1{
+    font-size: 50px;
+    display: inline-block;
+    margin-right: 20rem;
+}
+
+.title-2{
+    display: inline-block;
+    font-size: 25px;
+}
+
+.title{
+    font-size: 50px;
+}
+
+img{
+    border-radius: 50%;
+    width : 100px;
+    height: 100px;
+}
+
+.header{
+    margin-top: 40px;
+  
+    
+}
+
+.header a{
+    color:#373C3B;
+}
+
+.segment-2{
+    margin-bottom: 3rem;
+}
+
+.background{
+    background-color: #f0f4f0;
+    height:350px;
+    z-index: 0;
+}
+
+.languages{
+    background-color: #f0f4f0;
+    margin-bottom: 3rem;
+}

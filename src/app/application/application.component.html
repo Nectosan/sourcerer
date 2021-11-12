@@ -1,0 +1,109 @@
+<body>
+
+<div class="block "class="header">
+  <p> Share your profile on: </p> <br>
+  <div class="columns ">
+    <div class="column is-1">
+      <a href="#"> <u>LinkedIn</u></a>
+    </div>
+    <div class="column is-1">
+      <a href="#"> <u>Twitter</u></a>
+    </div>
+    <div class="column is-1">
+        <a href="#"><u>Facebook</u></a>
+    </div>
+    <div class="column is-1">
+          <a href="#"><u>Get HTML</u></a>
+    </div>
+  </div>
+</div>
+
+<div class="title-section">
+  <div class="title-1"><b>{{ getName() }}</b></div>
+  
+  <div class="title-2"> {{ location }}</div>
+</div>
+
+
+
+  <div class="block" class="segment-2">
+    <div class="columns is-variable is-6">
+
+    
+      <img src="{{ getAvatarUrl() }}">
+
+    
+      <div class="column is-2">
+        <p class="title-column">Commits  <br> <b>{{ nbtotalCommits }}</b> </p>
+      </div>
+      <div class="column is-2">
+        <p class="title-column">Repo <br> <b>{{ getRepo() }}</b></p>
+      </div>
+      <div class="column is-2">
+        <p class="title-column-follows">Followers <br><b>{{ getFollowers() }}</b></p>
+      </div>
+      <div class="column is-2">
+        <p class="title-column-follows">Following  <br><b>{{ getFollowing() }}</b></p>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="block">
+    <p class="title"> <b>Languages</b></p>
+  </div>
+
+  <div class="languages">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [labels]="chartOptions.labels"
+      [responsive]="chartOptions.responsive"
+    ></apx-chart>
+  </div>
+  
+  <div class="block">
+    <p class="title"> <b>Repositories</b></p>
+
+    <div class="inline">{{ getRepo() }} repos</div>
+  </div>
+
+  <div class="block">
+    <div class="columns is-variable repo-column is-0 ">
+
+      <div class="column is-1" align=center>
+        <p >#</p>
+      </div>
+      
+      <div class="column is-3">
+        <p  >Repository</p>
+      </div>
+      <div class="column is-1">
+        <p  >Commits</p>
+
+      </div>
+      <div class="column is-1">
+        <p  >Team</p>
+      </div>
+      <div class="column is-1">
+        <p  >Language</p>
+      </div>
+      <div class="column is-1">
+        <p  >Timeline</p>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="block repo-block"  >
+
+   
+  </div>
+
+  
+</body>
+   
+
+     
+    
+
